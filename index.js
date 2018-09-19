@@ -5,7 +5,7 @@ class Driver {
   }
 
   yearsExperienceFromBeginningOf(year) {
-    
+
     return year - this.startDate.getFullYear() -1;
   }
 
@@ -22,7 +22,7 @@ class Route {
     const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
     let bv = this.beginningLocation.vertical;
     let ev = this.endingLocation.vertical;
-
+    console.log("blocks traveled ev:", ev);
     (bv > ev) ? vertical = (bv - ev) : vertical = (ev - bv);
 
     let bh = eastWest.indexOf(this.beginningLocation.horizontal)+1;
